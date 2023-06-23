@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Register</title>
+    <title>Sistema de gestion de Vehiculos</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -16,38 +16,27 @@
 
             <div class="contenedor__todo">
                 <div class="caja__trasera">
+                    
                     <div class="caja__trasera-login">
-                        <h3>Already have an account?</h3>
-                        <p>Login to enter the page</p>
-                        <button id="btn__iniciar-sesion">Login</button>
-                    </div>
-                    <div class="caja__trasera-register">
-                        <h3>Don't you have an account yet?</h3>
-                        <p>Sign up so you can log in</p>
-                        <button id="btn__registrarse">Register</button>
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <a href="registrar.html" id="btn__registrarse">Regístrarse</a>
                     </div>
                 </div>
 
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="" class="formulario__login">
-                        <h2>Login</h2>
-                        <input type="text" placeholder="E-mail">
-                        <input type="password" placeholder="Password">
-                        <button>Login</button>
+                    <form id="loginForm" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="email" id="email" name="email" aria-descibedby="emailHelp" required placeholder="Correo Electronico">
+                        <input type="password" id="password" name="password" required placeholder="Contraseña">
+                        <button type="button" class="btn btn-primary" onclick="login()">Ingresar</button>
+                        <a href="registrar.html" id="btn__registrarse">Regístrarse</a>
                     </form>
 
-                    <!--Register-->
-                    <form action="" class="formulario__register">
-                        <h2>Register</h2>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="User">
-                        <input type="password" placeholder="Password">
-                        <button>Register</button>
-                    </form>
+                    
+                    
                 </div>
             </div>
 
